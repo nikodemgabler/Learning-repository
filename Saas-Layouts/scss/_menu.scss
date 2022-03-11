@@ -6,7 +6,6 @@
     height: 20px;
     width: 28px;
     cursor: pointer;
-    @include trasition-ease;
 
     &__burger {
         position: absolute;
@@ -15,7 +14,6 @@
         width: 28px;
         height: 3px;
         background: set-text-color($primary-color);
-        @include trasition-ease;
 
         &::before {
             content: '';
@@ -24,7 +22,6 @@
             width: 28px;
             height: 3px;
             background: set-text-color($primary-color);
-            @include trasition-ease
         }
 
         &::after {
@@ -34,7 +31,6 @@
             width: 20px;
             height: 3px;
             background: set-text-color($primary-color);
-            @include trasition-ease;
         }
 
         &.open {
@@ -76,7 +72,6 @@
         list-style-type: none;
         padding-right: 1rem;
         transform: translateY(-100%);
-        @include trasition-ease;
 
         &.open {
             transform: translateY(0);
@@ -84,7 +79,6 @@
 
         &__item {
             transform: translateX(100vw);
-            @include trasition-ease;
 
             &.open {
                 transform: translateX(0);
@@ -101,7 +95,6 @@
             text-transform: uppercase;
             padding: 2rem 0;
             font-weight: 300;
-            @include trasition-ease;
 
             &:hover {
                 color: $secondary-color;
