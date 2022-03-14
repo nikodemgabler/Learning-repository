@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+$main-color: #00D563;
+$main-color-hover: #00aa4f;
+$line-color: rgb(243, 243, 243);
+$line-color2: rgb(219, 219, 219);
+
+$innovation-color: #bc9c5f;
+$business-color: #fac303;
+$industry-color: #4cc9f0;
+$pm-color: #3f89ff;
+$software-color: #f48e41;
+$ux-color: #ff4d6d;
+$nway-color: #7b008f;
+$people-color: #b17df9;
+
+
+  @mixin media-md {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  @mixin media-lg {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+  @mixin media-xl {
+    @media screen and (min-width: 1366px) {
+      @content;
+    }
+  }
