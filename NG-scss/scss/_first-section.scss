@@ -1,34 +1,12 @@
 .first-section {
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: 10vh;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-
-    header {
-        text-align: center;
-        width: 80vw;
-        margin: 0 auto;
-
-        h1 {
-            font-size: 36px;
-            font-weight: 500;
-
-            strong {
-                color: $main-color;
-                font-weight: 500;
-            }
-        }
-
-        span {
-            display: block;
-            padding-top: 10px;
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 1.7;
-            margin-bottom: 35px;
-        }
-    }
+    margin: 0 auto;
 
     &__container {
         width: 100vw;

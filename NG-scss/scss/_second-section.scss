@@ -1,0 +1,22 @@
+.second-section {
+    margin: 230px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    header {
+        margin-bottom: 60px;
+    }
+}
+
+@include media-md {
+    .second-section {
+        width: 728px;
+    }
+}
+
+@include media-lg {
+    .second-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
