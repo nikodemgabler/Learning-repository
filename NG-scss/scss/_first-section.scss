@@ -1,9 +1,15 @@
 .first-section {
+<<<<<<< HEAD
+=======
+    display: flex;
+    flex-direction: column;
+>>>>>>> netguru-scss
     position: relative;
     top: 10vh;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+<<<<<<< HEAD
 
     header {
         text-align: center;
@@ -29,6 +35,9 @@
             margin-bottom: 35px;
         }
     }
+=======
+    margin: 0 auto;
+>>>>>>> netguru-scss
 
     &__container {
         width: 100vw;

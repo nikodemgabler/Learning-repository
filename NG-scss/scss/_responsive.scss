@@ -1,0 +1,32 @@
+@media screen and (min-width: 768px) {
+
+    .second-section {
+        header {
+            max-width: 680px !important;
+            padding: 0;
+    }
+  }   
+
+    .slides {
+        max-width: 680px !important;
+
+        &__slide {
+            width: 680px;
+            // margin: 0 auto !important;
+
+
+            &__blog-post {
+                width: 680px;
+
+                &__image {
+                    max-width: 588px !important;
+                    max-height: 308px !important;
+
+                    img {
+                        width: 680px;
+                    }
+                }
+            }
+        }
+    }
+}
