@@ -1,0 +1,103 @@
+.boxes {
+    display: grid;
+    text-align: center;
+    
+    @include media-md {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+    }
+
+    @include media-lg {
+        grid-template-columns: repeat(3, 1fr);
+        width: 920px;
+    }
+
+    @include media-xl {
+        grid-template-columns: repeat(4, 1fr);
+        width: 1248px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        width: 85vw;
+        max-width: 382px;
+        height: 287.5px;
+        padding: 35px 24px;
+        border: 1px solid $line-color2;
+        border-radius: 7px;
+        margin-bottom: 20px;
+
+        @include media-md {
+            width: 326px;
+            height: 317.5px;
+            padding: 50px 24px;
+            margin-bottom: 0px
+        }
+
+        @include media-lg {
+            width: 288.66px;
+            margin-bottom: 30px
+        }
+
+        @include media-xl {
+            width: 280px;
+            height: 332.5px;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 30px 2px rgb(223, 223, 223);
+        }
+
+        h2 {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 400;
+            padding-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 21px;
+            font-weight: 500;
+            padding-bottom: 20px;
+        }
+
+        p {
+            color: $description-color;
+            font-size: 14px;
+            font-weight: 300;
+            padding-bottom: 55px;
+            line-height: 1.7;
+        }
+
+        span {
+            display: flex;
+            text-align: left;
+            justify-content: space-between;
+            width: 130px;
+            font-size: 16px;
+            font-weight: 500;
+            padding-bottom: 6px;
+            align-self: center;
+
+            &::after {
+                content: '>';
+                position: absolute;
+                padding-left: 120px;
+            }
+        }
+
+
+        &__innovation { color: $innovation-color} &__innovation-read { border-bottom: 1px solid $innovation-color;}
+        &__business { color: $business-color} &__business-read { border-bottom: 1px solid $business-color;}
+        &__industry { color: $industry-color} &__industry-read { border-bottom: 1px solid $industry-color;}
+        &__pm { color: $pm-color} &__pm-read { border-bottom: 1px solid $pm-color;}
+        &__software { color: $software-color} &__software-read { border-bottom: 1px solid $software-color;}
+        &__ux { color: $ux-color} &__ux-read { border-bottom: 1px solid $ux-color;}
+        &__nway { color: $nway-color} &__nway-read { border-bottom: 1px solid $nway-color;}
+        &__people { color: $people-color} &__people-read { border-bottom: 1px solid $people-color;}
+        
+
+    }
+}
