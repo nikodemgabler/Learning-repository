@@ -1,0 +1,41 @@
+.author-info {
+    position: relative;
+    display: grid;
+    grid-template-areas: 
+    "thumbnail name"
+    "thumbnail time";
+    justify-content: left;
+    grid-gap: 10px;
+    
+
+    &__thumbnail {
+        grid-area: thumbnail;
+    }
+
+    &__name {
+        grid-area: name;
+        font-weight: 500;
+
+        &::after{
+            content: '';
+            display: block;
+            padding-bottom: 3px;
+            border-bottom: 1px solid $main-color;
+        }
+
+        &:hover {
+            margin-top: -1px;
+            &::after {
+                border-bottom: 3px solid $main-color;
+            }
+        }
+    }
+
+    &__time {
+        grid-area: time;
+        position: absolute;
+        bottom: 0;
+        font-size: 14px;
+        color: $category-color;
+    }
+}

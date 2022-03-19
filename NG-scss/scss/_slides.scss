@@ -1,0 +1,16 @@
+.slides {
+    display: grid;
+    list-style-type: none;
+
+    @include media-lg {
+        width: 920px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 25px;
+        align-items: center;
+    }
+
+    @include media-xl {
+        width: 1200px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

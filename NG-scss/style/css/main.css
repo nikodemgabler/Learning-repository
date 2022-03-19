@@ -397,4 +397,231 @@ a {
 .boxes__box__people-read {
   border-bottom: 1px solid #b17df9;
 }
+
+.second-section {
+  margin-top: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.second-section header {
+  margin-bottom: 60px;
+  width: 90vw;
+  max-width: 540px;
+}
+
+@media screen and (min-width: 768px) {
+  .second-section header {
+    max-width: 728px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .second-section header {
+    max-width: 920px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .second-section header {
+    max-width: 1200px;
+  }
+}
+
+.second-section header h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.second-section header h2::before {
+  content: '01';
+  position: absolute;
+  font-size: 84px;
+  margin-top: -35px;
+  opacity: 0.04;
+}
+
+@media screen and (min-width: 768px) {
+  .second-section header h2::before {
+    margin-left: -25px;
+  }
+}
+
+.slides {
+  display: -ms-grid;
+  display: grid;
+  list-style-type: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .slides {
+    width: 920px;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 25px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .slides {
+    width: 1200px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.post-preview {
+  width: 90vw;
+  max-width: 540px;
+  margin-bottom: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .post-preview {
+    max-width: 588px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post-preview {
+    max-width: 448px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .post-preview {
+    max-width: 384px;
+  }
+}
+
+.post-preview__image {
+  display: block;
+  width: 100%;
+  height: 48vw;
+  max-height: 283px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .post-preview__image {
+    max-height: 308px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post-preview__image {
+    max-height: 235px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .post-preview__image {
+    max-height: 201px;
+  }
+}
+
+.post-preview__image img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.post-preview__image img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.post-preview__category {
+  margin: 25px 0;
+}
+
+.post-preview__category a {
+  color: #878787;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding-right: 20px;
+}
+
+.post-preview__title {
+  display: block;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+.post-preview__title h3 {
+  font-weight: 500;
+  font-size: 21px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.post-preview__title h3:hover {
+  color: #00D563;
+}
+
+.author-info {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "thumbnail name" "thumbnail time";
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  grid-gap: 10px;
+}
+
+.author-info__thumbnail {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: thumbnail;
+}
+
+.author-info__name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: name;
+  font-weight: 500;
+}
+
+.author-info__name::after {
+  content: '';
+  display: block;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #00D563;
+}
+
+.author-info__name:hover {
+  margin-top: -1px;
+}
+
+.author-info__name:hover::after {
+  border-bottom: 3px solid #00D563;
+}
+
+.author-info__time {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: time;
+  position: absolute;
+  bottom: 0;
+  font-size: 14px;
+  color: #878787;
+}
 /*# sourceMappingURL=main.css.map */
