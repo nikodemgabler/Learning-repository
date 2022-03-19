@@ -399,7 +399,7 @@ a {
 }
 
 .second-section {
-  margin-top: 140px;
+  margin: 140px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,5 +623,71 @@ a {
   bottom: 0;
   font-size: 14px;
   color: #878787;
+}
+
+.third-section {
+  margin: 140px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.third-section header {
+  margin-bottom: 60px;
+  width: 90vw;
+  max-width: 540px;
+}
+
+@media screen and (min-width: 768px) {
+  .third-section header {
+    max-width: 728px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .third-section header {
+    max-width: 920px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .third-section header {
+    max-width: 1200px;
+  }
+}
+
+.third-section header h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.third-section header h2::before {
+  content: '01';
+  position: absolute;
+  font-size: 84px;
+  margin-top: -35px;
+  opacity: 0.04;
+}
+
+@media screen and (min-width: 768px) {
+  .third-section header h2::before {
+    margin-left: -25px;
+  }
+}
+
+.third-section header h2 {
+  max-width: 500px;
+}
+
+.third-section header h2::before {
+  content: '02';
 }
 /*# sourceMappingURL=main.css.map */
