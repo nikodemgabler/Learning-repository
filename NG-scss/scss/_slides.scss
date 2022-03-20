@@ -1,6 +1,8 @@
 .slides {
+    position: relative;
     display: grid;
     list-style-type: none;
+
 
     @include media-lg {
         width: 920px;
@@ -13,4 +15,4 @@
         width: 1200px;
         grid-template-columns: repeat(3, 1fr);
     }
-}
+}   

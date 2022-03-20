@@ -1,0 +1,17 @@
+.fourth-section {
+    @include section-config;
+
+    padding: 100px 0 60px 0;
+    background-color: $background-color;
+
+    header {
+
+        h2 {
+            max-width: 500px;
+
+            &::before {
+                content: '';
+            }
+        }
+    }
+}

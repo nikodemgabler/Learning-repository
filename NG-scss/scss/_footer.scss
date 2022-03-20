@@ -1,0 +1,154 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-color;
+
+
+    &__main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+        grid-gap: 25px;
+        max-width: 540px;
+
+
+        @include media-md {
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 680px
+        }
+        @include media-lg {
+            max-width: 920px;
+        }
+        @include media-xl {
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 1200px;
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                font-size: 14px;
+
+                a {
+                    color: $description-color;
+                    line-height: 2.2;
+                    font-weight: 300;
+                }
+
+                h2 {
+                    display: block;
+                    padding-bottom: 20px;
+                    letter-spacing: 1px;
+
+                    a {
+                    color: black;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 12px;
+
+                    @include media-lg {
+                        font-size: 14px;
+                    }
+                    }
+                }
+            }
+        }
+        &__services {
+            @include media-md {
+                grid-column: 1;
+                grid-row: 1;
+            }
+            @include media-xl {
+                grid-column: 1;
+                grid-row: 1;
+            }
+        }
+        &__industries {
+            @include media-md {
+                grid-column: 1;
+                grid-row: 2;
+            }
+            @include media-xl {
+                grid-column: 1;
+                grid-row: 2;
+            }
+        }
+        &__clients {
+            @include media-md {
+                grid-column: 1;
+                grid-row: 3;
+            }
+            @include media-xl {
+                grid-column: 2;
+                grid-row: 1;
+            }
+        }
+        &__reports {
+            @include media-md {
+                grid-column: 2; 
+                grid-row: 1;
+            }
+            @include media-xl {
+                grid-column: 2;
+                grid-row: 2;
+                margin-top: -155px;
+            }
+        }
+        &__insights {
+            @include media-md {
+                grid-column: 2; 
+                grid-row: 2;
+                margin-top: -80px;
+            }
+            @include media-xl {
+                grid-column: 3;
+                grid-row: 1;
+                margin-top: 0;
+            }
+        }
+        &__publications {
+            @include media-md {
+                grid-column: 3; 
+                grid-row: 1;
+            }
+            @include media-xl {
+                grid-column: 3;
+                grid-row: 2;
+            }
+        }
+        &__aboutus {
+            @include media-md {
+                grid-column: 3; 
+                grid-row: 2;
+                margin-top: -80px;
+            }
+            @include media-xl {
+                grid-column: 4;
+                grid-row: 1;
+                margin-top: 0;
+            }
+        }
+        &__join-netguru {
+            @include media-md {
+                grid-column: 3; 
+                grid-row: 3;
+            }
+            @include media-xl {
+                grid-column: 4;
+                grid-row: 2;
+                margin-top: -70px;
+            }
+        }
+    }
+
+    &__details-parent {
+        width: 100%;
+        background-color: white;
+        margin-top: 60px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
