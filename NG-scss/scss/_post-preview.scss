@@ -3,14 +3,18 @@
     max-width: 540px;
     margin-bottom: 70px;
 
+
     @include media-md {
         max-width: 588px;
     }
     @include media-lg {
         max-width: 448px;
+        height: 500px;
+        margin-bottom: 0;
     }
     @include media-xl {
         max-width: 384px;
+        height: 452px;
     }
 
     &__image {
@@ -27,7 +31,7 @@
         @include media-lg {
             max-height: 235px;
         }
-        @include media-lg {
+        @include media-xl {
             max-height: 201px;
         }
 
@@ -53,7 +57,15 @@
             font-weight: 500;
             padding-right: 20px;
         }
+
+        @include media-lg {
+                
+            a:nth-child(2) {
+                padding-right: 90px;
+            }
+        }
     }
+
 
     &__title {
         display: block;

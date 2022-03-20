@@ -1,0 +1,12 @@
+.fifth-section {
+    @include section-config;
+
+    header {
+
+        h2 {
+            &::before {
+                content: '03';
+            }
+        }
+    }
+}

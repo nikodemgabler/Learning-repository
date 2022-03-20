@@ -1,0 +1,173 @@
+.details {
+    width: 90vw;
+
+    @media screen and (min-width: 588px) {
+        width: 540px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @include media-md {
+        width: 680px;
+    }
+    @include media-lg {
+        width: 920px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include media-xl {
+        width: 1200px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    img {
+        margin: 38px 0px;
+        margin-left: -5px;
+        align-self: start;
+
+        @media screen and (min-width: 588px) {
+            grid-column: 1/3;
+        }
+        @include media-lg {
+            margin: 60px 0;
+        }
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 21px;
+        margin-bottom: 15px;
+        
+        @include media-xl {
+            padding-bottom: 15px;
+        }
+    }
+
+    p {
+        color: $category-color;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.7;
+
+        @include media-lg {
+            font-size: 14px;
+        }
+        @include media-lg {
+            font-size: 14px;
+        }
+    }
+
+    &__company-address {
+
+        @include media-md {
+            grid-column: 1/3;
+            grid-row: 2;
+        }
+      }
+
+    &__company-data {
+        margin: 20px 0 40px 0;
+
+        @media screen and (min-width: 588px) {
+            grid-column: 1;
+            grid-row: 3;
+            padding-top: 20px;
+        }
+        @include media-md {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        @include media-xl {
+            padding-top: 35px;
+        }
+    }
+
+    &__contact {
+
+        @media screen and (min-width: 588px) {
+            grid-column: 2;
+            grid-row: 2;
+        }
+        @include media-md {
+            display: block;
+            grid-column: 1;
+            grid-row: 3; 
+        }
+        @include media-lg {
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        a {
+            display: block;
+            width: 104px;
+            font-size: 12px;
+            color: $description-color;
+            border-bottom: 1px solid $main-color;
+            padding-bottom: 4px;
+
+            @include media-lg {
+                font-size: 14px;
+                width: 122px;
+            }
+
+            &:hover {
+                margin-top: -1px;
+                border-bottom: 2px solid $main-color;
+            }
+        }
+    }
+    
+    &__follow-wrapper {
+        margin-top: 40px;
+        width: 258px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 14px;
+
+        @media screen and (min-width: 588px) {
+            grid-column: 1;
+            grid-row: 4;
+            margin-top: 0px;
+        }
+        @include media-md {
+            grid-column: 2;
+            grid-row: 3; 
+        }
+        @include media-lg {
+            grid-column: 1;
+        }
+        @include media-xl {
+            grid-column: 4;
+            grid-row: 2;
+            height: 110px;
+            
+        }
+
+        h2 {
+            grid-column: 1/4;
+            margin: 0;
+
+            @include media-lg {
+                padding-bottom: 20px;
+            }
+            @include media-xl {
+                padding-bottom: 10px;
+            }
+        }
+
+        a {
+            display: block;
+            width: 16px;
+            height: 16px;
+            z-index: 2;
+
+            i {
+                font-size: 17px;
+            }
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}

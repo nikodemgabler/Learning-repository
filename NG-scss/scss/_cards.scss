@@ -1,0 +1,112 @@
+.cards {
+    position: relative;
+    display: grid;
+    text-align: left;
+    justify-content: space-between;
+    grid-gap: 25px;
+    
+    @include media-md {
+        grid-template-columns: repeat(2, 1fr);
+        width: 680px;
+    }
+
+    @include media-lg {
+        grid-template-columns: repeat(3, 1fr);
+        width: 920px;
+    }
+
+    @include media-xl {
+        grid-template-columns: repeat(4, 1fr);
+        width: 1200px;
+    }
+
+    &__card {
+        display: grid;
+        flex-direction: column;
+        grid-template-areas: 
+        "category arrow"
+        "type arrow";
+        width: 85vw;
+        max-width: 382px;
+        height: 113.5px;
+        padding: 24px 24px 30px 24px;
+        border: 1px solid $line-color2;
+        border-radius: 7px;
+        transition: .2s ease-in-out;
+
+        @include media-md {
+            max-width: 326px;
+        }
+
+        @include media-lg {
+            max-width: 288.66px;
+        }
+
+        @include media-xl {
+            max-width: 280px;
+        }
+
+        &:hover {
+            box-shadow: 0px 0px 30px 2px rgb(223, 223, 223);
+            padding-right: 18px;
+
+            span.cards__card__innovation-arrow {
+                color: $innovation-color;
+            }
+            span.cards__card__business-arrow {
+                color: $business-color;
+            }
+            span.cards__card__industry-arrow {
+                color: $industry-color;
+            }
+            span.cards__card__pm-arrow {
+                color: $pm-color;
+            }
+            span.cards__card__software-arrow {
+                color: $software-color;
+            }
+            span.cards__card__ux-arrow {
+                color: $ux-color;
+            }
+            span.cards__card__nway-arrow {
+                color: $nway-color;
+            }
+            span.cards__card__people-arrow {
+                color: $people-color;
+            }
+        }
+
+        h2 {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 400;
+            grid-area: category;
+        }
+
+        span {
+            grid-area: arrow;
+            font-size: 36px;
+            text-align: right;
+
+            &::after {
+                content: '>';
+            }
+        }
+
+        h3 {
+            font-size: 21px;
+            font-weight: 500;
+            grid-area: type;
+        }
+
+        &__innovation { color: $innovation-color} 
+        &__business { color: $business-color} 
+        &__industry { color: $industry-color} 
+        &__pm { color: $pm-color} 
+        &__software { color: $software-color} 
+        &__ux { color: $ux-color} 
+        &__nway { color: $nway-color} 
+        &__people { color: $people-color} 
+    }
+}

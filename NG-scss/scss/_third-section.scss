@@ -1,0 +1,14 @@
+.third-section {
+    @include section-config;
+
+    header {
+
+        h2 {
+            max-width: 500px;
+
+            &::before {
+                content: '02';
+            }
+        }
+    }
+}
