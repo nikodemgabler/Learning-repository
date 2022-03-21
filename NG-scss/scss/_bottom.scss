@@ -1,0 +1,46 @@
+.bottom {
+    text-align: center;
+    margin: auto auto;
+    color: $category-color;
+    font-size: 12px;
+    font-weight: 300;
+
+    @include media-lg {
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        width: 920px;
+    }
+    @include media-xl {
+        width: 1200px;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 100px 100px 80px;
+        padding-bottom: 18px;
+        
+        @include media-lg {
+            padding: 0;
+            order: 2;
+        }
+        @include media-xl {
+            padding-right: 40px;
+        }
+
+        a {
+            color: $category-color;
+            text-align: center;
+            transition: .1s ease-in-out;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+
+    span {
+        display: block;
+        grid-row: 1;
+    }
+}

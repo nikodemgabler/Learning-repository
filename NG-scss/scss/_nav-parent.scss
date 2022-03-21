@@ -1,0 +1,25 @@
+.nav-parent {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: white;
+    border-bottom: 1px solid $line-color;
+
+
+    @include media-md {
+        align-items: center;
+        height: 70px;
+        padding: 0 ;
+    }
+
+
+    
+}
+

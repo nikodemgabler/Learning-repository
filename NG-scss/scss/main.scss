@@ -1,7 +1,8 @@
 
 @import 'config';
 @import 'body';
-@import 'nav';
+@import 'nav-parent';
+@import 'navbar';
 @import 'first-section';
 @import 'boxes';
 @import 'second-section';
@@ -20,4 +21,7 @@
 @import 'badges-parent';
 @import 'badges';
 @import 'logos';
+@import 'footer-bottom';
+@import 'bottom';
+
 
