@@ -2115,7 +2115,9 @@ a {
 
 @media screen and (min-width: 1024px) {
   .logos ul {
+
     width: 920px;
+
     -ms-grid-columns: (1fr)[6];
         grid-template-columns: repeat(6, 1fr);
     -ms-grid-rows: auto;
@@ -2125,7 +2127,11 @@ a {
 
 @media screen and (min-width: 1366px) {
   .logos ul {
+
     width: 1200px;
+
+    max-width: 1200px;
+
   }
 }
 
@@ -2168,6 +2174,7 @@ a {
     grid-row: 1;
   }
 }
+
 
 .footer-bottom {
   display: -webkit-box;
@@ -2251,4 +2258,5 @@ a {
   -ms-grid-row: 1;
   grid-row: 1;
 }
+
 /*# sourceMappingURL=main.css.map */
