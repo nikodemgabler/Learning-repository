@@ -27,6 +27,9 @@
 
             &::before {
                 content: '01';
+                 // sprawdz o co chodzi z css counter reset i zastosuj to tutaj - zeby te numerki same sie nadawaly, niezaleznie ile sekcji dodasz
+
+                // jak to ogarniesz to bedziesz przechujem!!!!!! xdd
                 position: absolute;
                 font-size: 84px;
                 margin-top: -35px;

@@ -4,6 +4,7 @@
     grid-template-areas: 
     "thumbnail name"
     "thumbnail time";
+    // raczej nie uzywa sie grid-template-areas, sproboj to zastapic w konwencji w której zacząłeś pisac ten projekt
     justify-content: left;
     grid-gap: 10px;
     

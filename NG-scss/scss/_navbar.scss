@@ -123,6 +123,7 @@
 
                 &:hover {
                     color: $main-color;
+                    // raczej nie uzywamy zmiennych sassowych, uzywaj natywnych zmiennych css pisane jako var(--var_name)
                 }
 
                 &::after {

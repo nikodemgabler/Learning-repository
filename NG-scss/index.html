@@ -34,22 +34,33 @@
             </ul>
 
             <div class="navbar__button close open"><a href="#">Estimate project</a></div>
+            <!-- 
+                1. niepotrzebnie owrapowany anchor w div
+                2. te klasy close i open nie są zgodne z BEM - powinny być zapisane jako modifier (w konwencji BEM) - navbar__button--close
+            -->
             <div class="navbar__burger"></div>
         </div>
     </nav>
 
 
     <section class="first-section">
+        <!-- nazywaj sekcje w bardziej specifczny sposób, zamiast nazwy first-section która nic nikomu nie mówi, zastosuj jakąś zrozumiałą nazwę opisującą komponent  -->
         <header>
+            <!-- nie łapiemy elementu cssem w ten sposób - kazdy element na stronie musi miec nazwę klasy i po niej byc lapany  -->
             <h1>Fuel for your <strong>innovation fire</strong></h1>
             <span>Opinions, tips, and latest news on software, technology, design, and business for innovators like you.</span>
+            <!-- niepotrzebnie <span>, to jest zwykly <p> -->
         </header>
     
         <div class="boxes">
+            <!-- wyjeb to jako osobny komponent w którym beda osobno box jako osobny komponent -->
 
             <a href="#" class="boxes__box">
+                <!-- box jako osobny komponent -->
                 <h2 class="boxes__box__innovation">Innovation</h2>
+                <!-- te 2x ___ to nie jest legitny BEM, zrob z box osobny komponent jak wspominam wyzej -->
                 <h3>Innovation Labs</h3>
+                <!-- tylko przypominam, ze zawsze nadajemy klase i lapiemy w css za klase -->
                 <p>Ideas, solutions, and experiments to help you reinvent your business</p>
                 <span class="boxes__box__innovation-read">Read Magazine</span>
             </a>
@@ -110,10 +121,12 @@
         <header>
             <h2>Loved by your peers</h2>
         </header>
+        <!-- nie musisz wrapowac tej <h2> w <header>, ale jesli miales na mysli poprawną semantykę to good try, jest poprawnie ale po chuj uzywac niepotrzebnych wrapperow -->
     
     <ul class="slides">
+        <!-- nie rob z tego listy, to niepotrzebne, zamiast tego uzyj poprawnie semantycznych elementow html  -->
         <li class="slides__slide">
-            
+            <!-- nie musisz wrapowac post-preview w ten parent slides__slide -->
         <article class="post-preview">
             <a href="#" class="post-preview__image">
                 <img src="images/article1.jpeg" alt="article-photo">
@@ -125,7 +138,9 @@
                 <h3>The Battle Between Embedded Finance and Value-Added Services</h3>
             </a>
             <div class="author-info">
+                <!-- wystarczy sama nazwa author -->
                 <img src="images/author1.png" alt="author-photo" class="author-info__thumbnail">
+                <!-- chyba bardziej avatar niz thumbnail -->
                 <a href="#" class="author-info__name">
                     Krzysztof Grzeszczuk
                 </a>
@@ -187,6 +202,7 @@
 <section class="third-section">
     <header>
         <h2>Guides on how to deliver successful digital products</h2>
+        <!-- ta h2 niech bedzie osobnym reuzywalnym komponentem, tak zeby nie trzeba bylo w kazdej osobnej sekcji osobno tego stylowac -->
     </header>
 
     <ul class="slides">
@@ -430,6 +446,7 @@
     <div class="cards">
 
         <a href="#" class="cards__card">
+        <!-- wyjeb kazda card jako osobny komponent, te 2x __ to nie legitny BEM jak wyzej wspominalem -->
             <h2 class="cards__card__innovation">Innovation</h2>
             <span class="cards__card__innovation-arrow"></span>
             <h3>Innovation Labs</h3>
