@@ -12,14 +12,14 @@
     background-color: white;
     border-bottom: 1px solid $line-color;
 
-
     @include media-md {
         align-items: center;
         height: 70px;
         padding: 0 ;
     }
 
-
-    
+    @include media-xl {
+        height: 90px;
+    }
 }
 

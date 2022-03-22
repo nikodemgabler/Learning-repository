@@ -4,14 +4,12 @@
     align-items: center;
     background-color: $background-color;
 
-
     &__main {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 90vw;
         grid-gap: 25px;
         max-width: 540px;
-
 
         @include media-md {
             grid-template-columns: repeat(3, 1fr);

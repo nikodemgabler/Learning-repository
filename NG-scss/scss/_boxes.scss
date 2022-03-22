@@ -88,7 +88,6 @@
             }
         }
 
-
         &__innovation { color: $innovation-color} &__innovation-read { border-bottom: 1px solid $innovation-color;}
         &__business { color: $business-color} &__business-read { border-bottom: 1px solid $business-color;}
         &__industry { color: $industry-color} &__industry-read { border-bottom: 1px solid $industry-color;}
@@ -97,7 +96,5 @@
         &__ux { color: $ux-color} &__ux-read { border-bottom: 1px solid $ux-color;}
         &__nway { color: $nway-color} &__nway-read { border-bottom: 1px solid $nway-color;}
         &__people { color: $people-color} &__people-read { border-bottom: 1px solid $people-color;}
-        
-
     }
 }
