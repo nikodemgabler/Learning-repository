@@ -495,6 +495,7 @@
 
     <img src="images/rocket.webp" alt="rocket-photo">
     <header>
+        <!-- nadal klasy css i łap po klasach -->
         <h2>Sign up for our <strong>newsletter</strong></h2>
         <span>Get growth tips that will make your business sky-rocket.</span>
     </header>
@@ -502,6 +503,7 @@
     <form class="newsletter__form">
 
         <label for="fname" class="newsletter__form__fname">First name:</label>
+        <!-- nie legitny BEM -->
         <input type="text" id="fname" name="fname" class="newsletter__form__fname-input">
 
         <label for="lname" class="newsletter__form__lname">Last name:</label>
@@ -520,6 +522,7 @@
 
     <div class="footer__main">
         <ul class="footer__main__services">
+            <!-- nie legitny BEM -->
             <li><h2><a href="#">Services</a></h2></li>
             <li><a href="#">Research & Development</a></li>
             <li><a href="#">Product Design</a></li>
@@ -687,6 +690,7 @@
 
     <div class="logos">
         <ul>
+            <!-- niepotrzebne wrapper oraz ul li (zrob to legitnie) -->
             <li><a href="#"><img src="images/reviews.png" alt=""></a></li>
             <li><img src="images/tnw.png" alt=""></li>
             <li><img src="images/inc.png" alt=""></li>
@@ -700,11 +704,13 @@
 
         <div class="bottom">
             <nav>
+                <!-- niepotrzebne wrappery -->
                 <a href="#">Privacy Policy</a>
                 <a href="#">Terms of use</a>
                 <a href="#">Sitemap</a>
             </nav>
             <span>&copy;2022 Netguru S.A. All rights reserved.</span>
+            <!-- p zamiast span -->
         </div>
     </div>
 </footer>
@@ -714,5 +720,6 @@
 
 <script src="js/main.js"></script>
 <script src="https://kit.fontawesome.com/7d8b82cc3c.js" crossorigin="anonymous"></script>
+<!-- te skrypty wrzuc do head i dodaj do nich defer (ogarnij o co chodzi z defer) -->
 </body>
 </html>
