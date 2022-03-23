@@ -8,3 +8,5 @@ hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("close")
     navButton.classList.toggle("close")
 } );
+
+// wszystko co powyzej owrapuj we funkcje 
