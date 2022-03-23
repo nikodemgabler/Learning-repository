@@ -10,6 +10,8 @@
 
     <title>Insights - blog about startups, web development and mobile</title>
 
+    <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/7d8b82cc3c.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
@@ -35,7 +37,6 @@
 
             <div class="navbar__button close open"><a href="#">Estimate project</a></div>
             <!-- 
-                1. niepotrzebnie owrapowany anchor w div
                 2. te klasy close i open nie są zgodne z BEM - powinny być zapisane jako modifier (w konwencji BEM) - navbar__button--close
             -->
             <div class="navbar__burger"></div>
@@ -43,13 +44,10 @@
     </nav>
 
 
-    <section class="first-section">
-        <!-- nazywaj sekcje w bardziej specifczny sposób, zamiast nazwy first-section która nic nikomu nie mówi, zastosuj jakąś zrozumiałą nazwę opisującą komponent  -->
-        <header>
-            <!-- nie łapiemy elementu cssem w ten sposób - kazdy element na stronie musi miec nazwę klasy i po niej byc lapany  -->
-            <h1>Fuel for your <strong>innovation fire</strong></h1>
-            <span>Opinions, tips, and latest news on software, technology, design, and business for innovators like you.</span>
-            <!-- niepotrzebnie <span>, to jest zwykly <p> -->
+    <section class="categories">
+        <header class="categories-header">
+            <h1 class="categories-header__h1">Fuel for your <strong>innovation fire</strong></h1>
+            <p class="categories-header__description">Opinions, tips, and latest news on software, technology, design, and business for innovators like you.</p>
         </header>
     
         <div class="boxes">
@@ -718,8 +716,6 @@
 
 
 
-<script src="js/main.js"></script>
-<script src="https://kit.fontawesome.com/7d8b82cc3c.js" crossorigin="anonymous"></script>
-<!-- te skrypty wrzuc do head i dodaj do nich defer (ogarnij o co chodzi z defer) -->
+
 </body>
 </html>
